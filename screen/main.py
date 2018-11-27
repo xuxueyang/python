@@ -15,6 +15,6 @@ while True:
     imm=cv2.cvtColor(np.array(im), cv2.COLOR_RGB2BGR)#转为opencv的BGR格式
     video.write(imm)
     cv2.imshow('imm', k)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1):# & 0xFF == ord('q'):
         break
 video.release()
